@@ -1,0 +1,16 @@
+.link-title{
+    text-align: center;
+    
+}
+.link-img-card{
+    height: 40px;
+    margin-top: -90px;
+    object-fit: cover;
+}
+.scroller{
+height: 600px;
+overflow-y: scroll;
+overflow: scroll;
+scrollbar-width: none;
+  }
+
