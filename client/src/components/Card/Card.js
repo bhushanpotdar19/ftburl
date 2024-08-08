@@ -17,7 +17,7 @@ function Card({ _id, title, slug, target, views, createdAt }) {
       <p className='new-url'>
         <img src={earth} className='icon' alt='icon' />
         {target &&(
-        <a href={target} className='target' target='_blank'>{target.substring(0, 40)}{target.length > 40 ? "..." : null}</a>
+        <a href={target} className='target' target='_blank'>{target.substring(0, 35)}{target.length > 35 ? "..." : null}</a>
         )}
       </p>
       <span class='view'>👁  {views}</span>

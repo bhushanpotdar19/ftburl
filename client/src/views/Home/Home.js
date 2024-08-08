@@ -64,7 +64,8 @@ function Home() {
     }
     return (
 
-        <div><h2 style={{position:'fixed'}}>Hello {user.fullname} 👋</h2>
+        <div>
+            <h2>Hello {user.fullname} 👋</h2>
 
             <button className='logout' onClick={() => {
                 localStorage.clear()
@@ -74,7 +75,7 @@ function Home() {
                 }, 2000)
             }} type='button'>Logout</button>
             <div className='title-header'>
-                <h1>URL Shortner</h1><img src={link} className='link-img-head'alt='link' />
+                <h1>URL Shortner</h1><img src={link} className='link-img-head' alt='link' />
             </div><p >Let's Convert the Long URL into Short URL</p>
 
             <div className='main'>

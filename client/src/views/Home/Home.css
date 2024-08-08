@@ -130,3 +130,18 @@ p{
     text-align: center;
     margin-top: -10px;
 }
+@media screen and (max-width: 600px){
+    .img-show{
+        display: none;
+    }
+   
+    .title-header{
+        margin-top: 50px;
+    }
+    .parent{
+        margin: 0 7px;
+        overflow: hidden;
+    }
+
+}
+    
