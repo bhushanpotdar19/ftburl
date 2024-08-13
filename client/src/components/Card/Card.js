@@ -19,12 +19,13 @@ function Card({ _id, title, slug, target, views, createdAt }) {
         {target && (
           <a href={target} className='target' target='_blank'>{target.substring(0, 35)}{target.length > 35 ? "..." : null}</a>
         )}
-      </p>
+     
       <span class='view'>👁  {views}</span>
+       </p>{target &&(<QRCode value={`${process.env.REACT_APP_API_URL}/${slug}`} size={40} className='qr'/>)}
       <span class='time'>{new Date(createdAt).toLocaleString()}</span>
      
 
-      {target &&(<QRCode value={`${process.env.REACT_APP_API_URL}/${slug}`} size={200} />)}
+      
       
 
 
