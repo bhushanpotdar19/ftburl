@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import { Link } from 'react-router-dom'
 import form from './form.png'
 import link from './link.png'
-import QRCode from 'react-qr-code'
+
 
 
 
