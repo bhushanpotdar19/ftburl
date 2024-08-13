@@ -3,6 +3,7 @@ import Card from '../../components/Card/Card'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
 import link1 from './../Home/link.png'
+import QRCode from 'react-qr-code'
 
 import './CardView.css'
 function CardView() {
@@ -83,6 +84,8 @@ function CardView() {
                     }
                     )}</div>
             <Toaster />
+
+          
         </div>
 
     )
