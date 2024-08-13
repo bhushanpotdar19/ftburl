@@ -21,7 +21,8 @@ function Card({ _id, title, slug, target, views, createdAt }) {
         )}
      
       <span class='view'>👁  {views}</span>
-       </p>{target &&(<QRCode value={`${process.env.REACT_APP_API_URL}/${slug}`} size={40} className='qr'/>)}
+       </p>
+       {(<QRCode value={`${process.env.REACT_APP_API_URL}/${slug}`} size={40} className='qr'/>)}
       <span class='time'>{new Date(createdAt).toLocaleString()}</span>
      
 
