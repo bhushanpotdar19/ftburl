@@ -47,7 +47,24 @@
     top: 55px;
     right: 35%;
 }
+.copy{
+    height: 22px;
+    cursor: pointer;
+  
+}
+.copied{
+    height: 20px;
+}
 
+
+
+@media screen and (max-width:870px){
+    .qr{
+        right: 10px;
+        height: 30px;
+    }
+
+}
 @media screen and (max-width:600px){
     .link-card{
         width: 90%;
@@ -70,6 +87,14 @@
     }
     .view{
         font-size: 15px;
+    }
+    .copy{
+        height: 15px;
+        cursor: pointer;
+      
+    }
+    .copied{
+        height: 15px;
     }
 
 }
