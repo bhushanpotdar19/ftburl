@@ -20,7 +20,7 @@ function Card({ _id, title, slug, target, views, createdAt }) {
       setCopied(true)
       setTimeout(() => {
         setCopied(false)
-      }, 2000);
+      }, 3000);
   }
   catch(err){
     console.error('Failed to copy: ', err)
@@ -38,9 +38,7 @@ function Card({ _id, title, slug, target, views, createdAt }) {
       <p className='new-url'>
         <img src={url} className='icon' alt='icon' />
         <a href={`${process.env.REACT_APP_API_URL}/${slug}`} target='_blank' className='slug'>{slugURL} </a>
-        <img src={copyimg} onClick={copyToClipboard} className='copy'/>
-
-        {copied && <img src={check} alt='copied' className='copied'/>}
+        <img src={copied ? check : copyimg} onClick={copyToClipboard} className='copy'/>
         
         
       </p>

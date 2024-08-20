@@ -20,8 +20,13 @@ function Signup() {
             dob: user.dob
         })
 
+
+
         if (response.data.success) {
+            
+           
             toast.success(response.data.message)
+            
 
             setUser({
                 fullname: '',
@@ -29,10 +34,21 @@ function Signup() {
                 password: '',
                 dob: ''
             })
+            setTimeout(() => {
+                window.location.href = '/login'
+              }, 1500)
+            
         }
+
         else {
-            toast.error(response.data.message)
+
+            return toast.error(response.data.message)
+
+
         }
+
+
+
     }
     return (
         <div>
@@ -74,9 +90,10 @@ function Signup() {
                             setUser({ ...user, dob: e.target.value })
                         }} />
 
-
-                    <button type='button' className='btn-signup' onClick={signup}>Signup</button>
-                   <p className='redirect'>Already have an account? <Link to='/login'> Login</Link></p> 
+                    
+                        <button type='button' className='btn-signup' onClick={signup}>Signup</button>
+                    
+                    <p className='redirect'>Already have an account? <Link to='/login'> Login</Link></p>
                 </div>
             </form>
 

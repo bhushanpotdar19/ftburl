@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './views/Home/Home';
-import CardView from './views/CardView/CardView';
-import Login from './views/Login/Login';
-import Signup from './views/Signup/Signup';
+import Login from './views/Login/Login.js';
+import Signup from './views/Signup/Signup.js';
+import CardView from './views/CardView/CardView.js';
 
 
 const router = createBrowserRouter([
